@@ -27,4 +27,4 @@ When the installation is finished, you can start the application and the project
 npm start
 ```
 
-[Node]:                      https://nodejs.org/en/
+[NodeJS]:                      https://nodejs.org/en/
