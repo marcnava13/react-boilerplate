@@ -6,7 +6,7 @@ Boilerplate to start to create a ReactJS application
 
 Install [NodeJS]
 
-### Configuration
+### Configuration
 
 First you must clone this respository:
 
