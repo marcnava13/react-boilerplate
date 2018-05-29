@@ -1,13 +1,27 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-class App extends Component {
-    render () {
-        return (
-            <div>
-                <h1>My React App!</h1>
-            </div>
-        )
-    }
+const Headline = () => {
+  return <h1>Hello World!</h1>
 }
 
-export default App;
+const Gretting = (props) => {
+  const {name, age} = props;
+  return <p>Your name is {name} and your age is {age}</p>
+}
+
+Gretting.propTypes = {
+  name: PropTypes.string,
+  age: PropTypes.number
+}
+
+export default class App extends Component {
+  render () {
+    return (
+      <div>
+        <Headline />
+        <Gretting name={'Marcos'} age={28} />
+      </div>
+    )
+  }
+}
