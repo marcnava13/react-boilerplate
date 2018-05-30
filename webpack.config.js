@@ -13,6 +13,9 @@ module.exports = {
       inline: true,
       overlay: true,
     },
+    resolve: {
+      extensions: ['.js', '.jsx']
+    },
     module: {
         rules: [
             {
